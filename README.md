@@ -1,2 +1,1 @@
-# Magamestudios
-Webiste files
+(c) Ma Game Studios 2021.
