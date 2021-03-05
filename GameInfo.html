@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="GameFooter.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="icon" href="Ma Logo Black.png">
-<link rel="stylesheet" href="footer.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="Ma Logo Black.png">
+    <link rel="stylesheet" href="GameInfo.css">
+    <link rel="stylesheet" href="coundowm.scss">
     <title>Ma Game Studios</title>
   </head>
   <body>
@@ -20,7 +19,7 @@
         <li class="link1"><a href="pcgamestudios.html">Pc Game Studios has been removed! Learn More!</a></li>
        </div>
     </nav>
-   
+  
     <nav>
       <div class="hamburger">
         <div class="line"></div>
@@ -28,7 +27,6 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      
       <ul class="nav-links">
         <!--<li><a href="index.html"> <img src="Ma Logo Black.png" class="logo"></img> -->
         <li><a href="index.html">Home Page</a></li>
@@ -39,15 +37,41 @@
         
       </ul>
     </nav>
+    <p class="countt" id="launch"></p>
 
-    <section class="landing">
-      <h1></h1>
-    </section>
+    <div class="countdownDiv">
+    <header class="landing">
+      <h1 class="ComSoon">Coming Soon...</h1>
+      <p class="countt" id="launch"></p>
+      <div class="coundown"></div>
 
-    <header>
-      <p>
-</p>
-      </header>
+      <script>
+
+          var countDownTime = new Date("Jan 1, 2022 00:00:00").getTime();
+
+          var x = setInterval(function() {
+
+              var now = new Date().getTime();
+
+              var distance = countDownTime - now;
+M
+              var days = Math.floor(distance / ((1000 * 60 * 60 * 24)));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+              var minutes = Math.floor((distance % ((1000 * 60 * 60)) / 1000 * 60));
+              var seconds = Math.floor(distance % ((1000 * 60)) / 1000);
+
+              document.getElementById("Launch").innerHTML = days + "d " + hours + "h " + minutes + "m "
+              + seconds + "s ";
+
+              if(distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("launch").innerHTML = "TIME IS OUT!";
+              }
+          }, 1000);
+      </script>
+    </header>
+    <script src="Coundowm.js"></script>
+</div>
       
       <footer class="footer">
       <div class="l-footer">
@@ -97,5 +121,7 @@
     
 
     <script src="app.js"></script>
+
+  
   </body>
 </html>

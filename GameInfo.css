@@ -1,53 +1,30 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Scrollin Paksuus*/
-::-webkit-scrollbar{
-  width: 15px;
-}
-
-/* Scrollin Väri*/
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(10deg, #00ccff, #00ccff)
-}
-
-@media screen and (max-width: 860px) {
-  ::-webkit-scrollbar{
-    width: 0px;
-  }
-  }
   /* tausta väri, ja default fontti (Body)*/
   body {
     font-family: sans-serif;
-    background-color: #435055;
-    
+    background-color: black;
   }
+
+  .countdown{
+    color: red;
+  }
+
+   .countdownDiv{
+     top: 50%;
+     left: 50%;
+   }
+
+   #launch{
+     font-size: 100px;
+     color: white;
+   }
+
   
-  .news1 {
-   text-align: center;
-   color: white;
-   margin-top: -600px;
-   height: 200px;
-   text-align: center;
-  }
-  .news2 {
-   text-align: center;
-   color: white;
-   margin-top: -800px;
-   height: 200px;
-   text-align: center;
-  }
-  
-.news3{
-  text-align: center;
-  color: red;
-  margin-top: -600px;
-  height: 200px;
-  text-align: center;
-}
 
 
   /* Privacy Policyn Pää teksti (PrivacyPolicy) */
@@ -121,7 +98,7 @@
   /*Ylä Palkki (body/kaikki)*/
   nav {
     height: 5vh;
-    background: #27323A;
+    background: rgb(12, 12, 12);
   }
 
   .info{
@@ -200,7 +177,19 @@
     margin: 100px;
     font-size: 50px;
     color: white;
+    margin-top: -300px;
+    font-family: sans-serif;
   }
+
+  @media screen and (max-width: 860px) {
+    .landing h1{
+     font-size: 40px;
+   }}
+
+   @media screen and (max-width: 510px) {
+    .landing h1{
+     font-size: 35px;
+   }}
 
 
     
@@ -317,8 +306,41 @@
   }}
 
   
+  .news1 {
+    background: black;
+   text-align: center;
+   color: white;
+   margin-top: -700px;
+   height: 200px;
+   text-align: center;
+  }
+  .news2 {
+   background: black;
+   text-align: center;
+   color: white;
+   margin-top: -700px;
+   height: 200px;
+   text-align: center;
+  }
+  
+  .news3 {
+    background: black;
+   text-align: center;
+   color: white;
+   margin-top: -700px;
+   height: 200px;
+   text-align: center;
+    }
+  
+  .main-bodyy{
 
-
+   background: black;
+   text-align: center;
+   color: white;
+   margin-top: -700px;
+   height: 200px;
+   text-align: center;
+  }
 
 
 
