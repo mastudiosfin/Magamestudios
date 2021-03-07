@@ -1,0 +1,38 @@
+[debug] [2021-03-04T13:49:23.449Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T13:49:23.452Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HULLUIN KONE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-03-04T13:49:23.452Z] CLI Version:   9.5.0
+[debug] [2021-03-04T13:49:23.452Z] Platform:      win32
+[debug] [2021-03-04T13:49:23.452Z] Node Version:  v14.15.1
+[debug] [2021-03-04T13:49:23.454Z] Time:          Thu Mar 04 2021 15:49:23 GMT+0200 (Itä-Euroopan normaaliaika)
+[debug] [2021-03-04T13:49:23.454Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T13:49:23.455Z] 
+[debug] [2021-03-04T13:49:23.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-04T13:49:23.467Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2021-03-04T13:49:23.499Z] [hub] writing locator at C:\Users\HULLUI~1\AppData\Local\Temp\hub-fir-account-unity.json
+[debug] [2021-03-04T13:49:23.527Z] > refreshing access token with scopes: []
+[debug] [2021-03-04T13:49:23.527Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-04T13:49:23.721Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Thu, 04 Mar 2021 13:49:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-04T13:49:23.725Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-account-unity/webApps/-/config [none]
+[debug] [2021-03-04T13:49:24.578Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-account-unity/webApps/-/config 200
+[debug] [2021-03-04T13:49:24.578Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-account-unity/webApps/-/config {"projectId":"fir-account-unity","storageBucket":"fir-account-unity.appspot.com","apiKey":"AIzaSyByB_hAWI9Bu21N1RHFH7sR6DoEVmuOY6A","authDomain":"fir-account-unity.firebaseapp.com","messagingSenderId":"747696537110"}
+[info] i  hosting: Serving hosting files from: html v4 {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mhtml v4\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI requires a project ID to start. Configure your default project with 'firebase use' or pass the --project flag."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ localhost:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: None
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-03-04T14:51:08.756Z] Received signal SIGHUP 1
