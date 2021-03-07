@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Scrollin Paksuus*/
+/* 
 ::-webkit-scrollbar{
   width: 15px;
 }
 
-/* Scrollin Väri*/
+
 ::-webkit-scrollbar-thumb{
   background:linear-gradient(10deg, #00ccff, #00ccff)
 }
+*/
 
 @media screen and (max-width: 860px) {
   ::-webkit-scrollbar{
