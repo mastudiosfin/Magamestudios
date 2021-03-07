@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styleAccount.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3 class="Login">Login on your Ma Game Studios Account</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br>
+    <a class="createbutton" href="#">Create An Account</a>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <a href="#">Download Ma Game Launcher Here!</a>
+    <br><br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyByB_hAWI9Bu21N1RHFH7sR6DoEVmuOY6A",
+      authDomain: "fir-account-unity.firebaseapp.com",
+      databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
+      projectId: "fir-account-unity",
+      storageBucket: "fir-account-unity.appspot.com",
+      messagingSenderId: "G-E7VLYTW9Z5"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="indexAccount.js"></script>
+
+
+</body>
+</html>
