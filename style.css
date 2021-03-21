@@ -4,29 +4,23 @@
     box-sizing: border-box;
 }
 
-/* 
-::-webkit-scrollbar{
-  width: 15px;
-}
 
-
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(10deg, #00ccff, #00ccff)
-}
-*/
 
 @media screen and (max-width: 860px) {
   ::-webkit-scrollbar{
     width: 0px;
   }
   }
+
+  
   /* tausta väri, ja default fontti (Body)*/
   body {
     font-family: sans-serif;
     background-color: #435055;
     
   }
-  
+
+
   .news1 {
    text-align: center;
    color: white;
@@ -34,6 +28,24 @@
    height: 200px;
    text-align: center;
   }
+
+  .Passowordd{
+    display: block;
+    width: 100%;
+    margin-bottom: 1px;
+    margin-top: -800px;
+    color: white;
+    text-align: center;
+  }
+
+  @media screen and (max-height: 886px){
+    .Passowordd{
+      color: red;
+      margin-top: -1000px;
+    }
+  }
+
+
   .news2 {
    text-align: center;
    color: white;
@@ -42,6 +54,14 @@
    text-align: center;
   }
   
+  .bug001{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -500px;
+    color: white;
+  }
 .news3{
   text-align: center;
   color: red;
@@ -64,7 +84,7 @@
     font-size: 3rem;
     color: white;
   }
-  
+ 
  
   /* En tiedä mikä tämä on :D*/
   .MaStudios{
